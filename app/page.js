@@ -1,4 +1,5 @@
 import Counter from "@/src/components/Counter";
+import DynamicHooksCounter from "@/src/components/DynamicHooksCounter";
 import HooksCounter from "@/src/components/HooksCounter";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
             <div className="max-w-md mx-auto mt-10 space-y-5">
                 {/* <Counter /> */}
                 <HooksCounter />
+                <DynamicHooksCounter incrementValue={5} decrementValue={3} />
             </div>
         </div>
     );
